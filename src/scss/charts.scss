@@ -1,0 +1,73 @@
+.charts{
+  padding: 100px 140px 80px 140px;
+  &-lineFlex{
+    display: flex;
+    &__line{
+      @include RedLine;
+      margin-top: 10px;
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+
+      /* Dark1 */
+      margin-left: 20px;
+      color: #0B060C;
+
+    }
+  }
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+    /* Dark blue */
+
+    color: #090F3F;
+
+  }
+  &-flexBox{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__items{
+      margin: 10px;
+      max-width: 510px;
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+
+      /* Gray 2 */
+
+      color: #4F4F4F;
+
+    }
+    &__price{
+      font-family: Rubik, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      letter-spacing: 0.02em;
+
+      /* purple */
+      margin-left: 50px;
+      color: #CF1257;
+
+    }
+    &__img{
+      margin-top: 20px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

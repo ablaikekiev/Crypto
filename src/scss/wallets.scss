@@ -1,0 +1,104 @@
+.wallets{
+  display: flex;
+  padding: 0 80px 100px 80px;
+  &__img{
+    width: 457px;
+  }
+  &-lineFlex{
+    display: flex;
+    &__line{
+      @include RedLine;
+      margin-top: 10px;
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      margin-left: 20px;
+      /* Dark1 */
+
+      color: #0B060C;
+
+    }
+  }
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+
+    /* Dark blue */
+
+    color: #090F3F;
+    margin-top: 20px;
+  }
+  &-flexBtns{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    &__btn{
+      @include yellowBtn;
+      color: #000000;
+      border: 1px solid #000;
+      margin-right: 50px;
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+
+      /* white */
+
+
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  &-flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    &__items{
+      display: flex;
+      width: 350px;
+      height: 77px;
+      background: #FFFFFF;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+      margin: 10px;
+    }
+    &__icon{
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      margin: 20px;
+    }
+    &__title{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+
+      /* Dark blue */
+      margin-top: 14px;
+      color: #090F3F;
+
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      margin-top: 10px;
+      color: #4F4F4F;
+    }
+
+  }
+}

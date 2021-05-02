@@ -1,0 +1,98 @@
+.benefits{
+  padding: 100px 100px;
+  &-line{
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__line{
+    @include RedLine;
+    margin-top: 10px;
+  }
+  &__subtitle{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* Dark1 */
+
+    color: #0B060C;
+  }
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+    /* Dark blue */
+
+    color: #090F3F;
+
+  }
+  &-flexBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    overflow: auto;
+    &__items{
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+      margin: 10px;
+      padding-bottom: 50px;
+    }
+  }
+  &__span{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* Dark1 */
+
+    color: #0B060C;
+  }
+  &__img{
+    width: 80px;
+    height: 80px;
+    margin: 50px 90px 50px 90px;
+  }
+  &__content{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0 50px;
+    letter-spacing: 0.02em;
+    color: #090F3F;
+  }
+  &__text{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+    /* Gray 2 */
+    text-align: center;
+    padding: 0 30px;
+    color: #4F4F4F;
+  }
+}

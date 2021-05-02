@@ -1,0 +1,110 @@
+.events{
+  padding: 100px 270px 150px;
+  &-lineFlex{
+    display: flex;
+    justify-content: center;
+    &__line{
+      @include RedLine;
+      margin-top: 10px;
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      margin-left: 20px;
+      /* Dark1 */
+
+      color: #0B060C;
+    }
+  }
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+    /* Dark blue */
+    text-align: center;
+    color: #090F3F;
+
+  }
+  &-flexBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    &__items{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #FFFFFF;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+      width: 265px;
+      margin: 25px;
+    }
+    &__title{
+      font-family: Rubik, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      letter-spacing: 0.02em;
+      margin-top: 20px;
+      text-align: center;
+      /* purple */
+
+      color: #CF1257;
+
+    }
+    &__subtitle{
+      font-family: Rubik, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      margin-top: 10px;
+      text-align: center;
+      /* purple */
+
+      color: #CF1257;
+
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-top: 47px;
+      /* Dark blue */
+
+      color: #090F3F;
+
+    }
+    &__content{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      margin: 16px auto 50px;
+      width: 188px;
+      /* Gray 2 */
+
+      color: #4F4F4F;
+    }
+    &__btn{
+      @include yellowBtn;
+      border: 1px solid #000;
+      color: #000000;
+      margin: 0 auto 30px;
+      display: block;
+    }
+
+  }
+
+}

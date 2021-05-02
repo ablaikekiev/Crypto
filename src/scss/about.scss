@@ -1,0 +1,70 @@
+.about{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  &-flexBox{
+    width: 50%;
+  }
+  &__lineFlex{
+    display: flex;
+    justify-content: flex-start;
+
+  }
+  &__line{
+    @include RedLine;
+    margin-top: 30px;
+  }
+  &__text{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    /* Dark1 */
+    margin-bottom: 20px;
+    color: #0B060C;
+
+  }
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 58px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    width: 90%;
+    /* Dark blue */
+    margin-bottom: 20px;
+    color: #090F3F;
+  }
+  &__content{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    width: 80%;
+    /* Gray 2 */
+
+    color: #4F4F4F;
+  }
+  &__img{
+    margin-left: 90px;
+  }
+
+}

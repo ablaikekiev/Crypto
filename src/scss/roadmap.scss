@@ -1,0 +1,55 @@
+.roadmap {
+  position: relative;
+  padding: 80vh;
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-40%);
+  }
+
+  &-flexBox {
+    position: absolute;
+    top: 0;
+    left: 45%;
+  }
+
+  &__btn {
+    @include yellowBtn;
+    color: #000000;
+    border: 1px solid #000;
+  }
+
+}
+.roadmapFooter{
+  text-align: center;
+  &__lineFlex{
+    display: flex;
+    justify-content: center;
+  }
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+
+    /* Dark blue */
+    margin-top: 20px;
+    color: #090F3F;
+  }
+  &__text{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+
+    /* Gray 2 */
+    margin-top: 20px;
+    color: #4F4F4F;
+    margin-right: auto;
+    margin-left: auto;
+    width: 770px;
+  }
+}

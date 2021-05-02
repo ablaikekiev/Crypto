@@ -1,0 +1,399 @@
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 30px !important;
+  }
+  .header {
+    &-flexBox {
+      &__items {
+        width: 90px;
+        font-size: 11px;
+      }
+    }
+  }
+  .home {
+
+    &__title {
+      font-size: 50px;
+    }
+  }
+  .about {
+    &__title {
+      width: 70%;
+    }
+  }
+  .wallets {
+    &-flexBtns {
+      flex-wrap: wrap;
+
+      &__btn {
+        margin: 10px;
+
+        &:last-child {
+          margin: 10px;
+        }
+      }
+    }
+
+    &__img {
+      object-fit: contain;
+    }
+  }
+  .network {
+    padding-bottom: 200px;
+
+    &-flexBox {
+      &__text {
+        font-size: 40px;
+      }
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__content {
+      width: 570px;
+    }
+  }
+  .miner {
+    &-flexFooter {
+      &__title {
+        font-size: 30px;
+      }
+    }
+  }
+  .donate {
+    &-flexBox {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    &-flexBox {
+      &__items {
+        width: 66px;
+        height: 25px;
+        font-size: 9px;
+      }
+    }
+  }
+  .about {
+    flex-wrap: wrap;
+
+    &__img {
+      margin-bottom: 50px;
+    }
+
+    &__line {
+      margin-top: 10px;
+    }
+  }
+  .roadmap {
+    &-flexBox {
+      position: relative;
+      width: 570px;
+      transform: translate(-55%, 105%);
+    }
+  }
+  .wallets {
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__box {
+      width: 340px;
+    }
+
+    &__img {
+      margin-bottom: 70px;
+    }
+  }
+  .team {
+    padding-bottom: 0;
+
+    &-flexBox {
+      &__items {
+        margin: 10px;
+      }
+
+      &__icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .miner {
+    &-flexBox {
+      &__items {
+        width: 270px;
+      }
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+  .donate {
+    &-flexBox {
+      &__items {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    transition: 0.6s;
+    &__logoPopup{
+      display: block;
+    }
+    &-flexBox{
+      transition: 0.6s;
+    }
+    &-flexBox {
+      display: none;
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      top: -100%;
+      right: 0;
+      width: 50%;
+      background: #FFFFFF;
+      flex-direction: column;
+      transition: 0.6s;
+      &__flexImages{
+        display: block;
+        margin-top: 20px;
+        &-items{
+          width: 33px;
+          height: 33px;
+          margin: 10px;
+        }
+      }
+      &__items {
+        font-family: Hind, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 150%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        width: 90px;
+        margin: 5px;
+        color: #090F3F;
+        &:hover{
+          color: #FFFFFF;
+        }
+      }
+      &.active {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        top: 0;
+        right: 0;
+        width: 50%;
+        background: #FFFFFF;
+        z-index: 3;
+        transition: 0.7s;
+
+
+
+      }
+    }
+  }
+  .burger-menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+
+    &.active {
+      z-index: 3;
+      background: #FFFFFF;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+      .burger-menu__line {
+        background: none;
+
+        &:before {
+          width: 15px;
+          transform: rotate(45deg) translate(-13px, 11px);
+          top: 0;
+          background: #000;
+        }
+
+        &:after {
+          width: 15px;
+          transform: rotate(-45deg) translate(-11px, -13px);
+          bottom: 0;
+          background: #000;
+        }
+
+      }
+    }
+
+    &__line {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 20px;
+      height: 2px;
+      background: #f1f1f1;
+      position: relative;
+      transition: 0.5s;
+
+      &:before {
+        @include burgerLine;
+        top: -10px;
+      }
+
+      &:after {
+        @include burgerLine;
+        bottom: -10px;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  h3{
+    font-size: 24px !important;
+  }
+  .header-flexBox__flexImages-items{
+    margin: -1px;
+  }
+  .home{
+    &__title{
+      font-size: 28px;
+    }
+  }
+  .about{
+    padding: 100px 10px 100px;
+    &__content{
+      width: 50%;
+    }
+    &__title{
+      width: 50%;
+    }
+  }
+  .roadmap{
+    &__image{
+      width: 650px;
+    }
+  }
+  .benefits{
+    padding: 100px 10px 100px;
+  }
+  .roadmapFooter{
+    &__text{
+      width: 360px;
+    }
+  }
+  .network{
+    padding: 100px 10px 200px 10px;
+    &-flexBox{
+      justify-content: space-around;
+    }
+    &-flexImages{
+      &__items{
+        margin: 10px;
+        width: 95px;
+      }
+    }
+  }
+  .wallets{
+    &__img{
+      width: 322px;
+      height: 309px;
+      object-fit: cover;
+    }
+  }
+  .team{
+    padding: 100px 10px 100px;
+    &-flexBox{
+      overflow: auto;
+      &__icon{
+        display: none;
+      }
+    }
+  }
+  .charts{
+    padding: 100px 10px 100px;
+    &-flexBox{
+      &__price{
+        font-size: 24px;
+      }
+    }
+  }
+  .miner{
+    padding: 100px 10px 100px;
+    &-flexBox{
+      flex-wrap: wrap;
+      &__items{
+        margin: 10px;
+      }
+    }
+    &-flexFooter{
+      width: 350px;
+    }
+  }
+  .events{
+    padding: 100px 10px 100px;
+    &-flexBox{
+      overflow: auto;
+    }
+  }
+  .donate{
+    padding: 100px 10px 100px;
+    &-flexBox{
+      &__title{
+        font-size: 9px;
+      }
+      &__text{
+        font-size: 10px;
+      }
+    }
+  }
+  .footer{
+    &-flexLabel{
+      &__text{
+        font-size: 12px;
+      }
+    }
+    &-label{
+      width: 347px;
+    }
+    &-flexImages{
+      &__items{
+        width: 33px;
+        height: 33px;
+        object-fit: cover;
+        margin: 15px;
+      }
+    }
+    &__content{
+      font-size: 10px;
+    }
+  }
+  .upArrow{
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,124 @@
+.miner{
+  padding: 200px 120px 83px;
+  background: url("../images/miner/background.png") center/cover no-repeat;
+  display: flex;
+  &-lineFlex{
+    display: flex;
+    &__line{
+      @include RedLine;
+      margin-top: 10px;
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      margin-left: 20px;
+      /* white */
+
+      color: #FFFFFF;
+    }
+  }
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+    /* white */
+
+    color: #FFFFFF;
+
+  }
+  &__subtitle{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+
+    /* white */
+    margin-top: 20px;
+    color: #FFFFFF;
+
+    opacity: 0.7;
+  }
+  &-flexBox{
+    margin-top: 40px;
+    display: flex;
+    &__items{
+      display: flex;
+      background: #0B060C;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+      border-radius: 38.5px;
+      width: 350px;
+      margin-right: 50px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &__img{
+      margin: 19px;
+    }
+    &__title{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+
+      /* white */
+      margin-top: 14px;
+      color: #FFFFFF;
+
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+
+      /* white */
+      margin-top: 10px;
+      color: #FFFFFF;
+
+      opacity: 0.7;
+    }
+  }
+  &-flexFooter{
+    display: flex;
+    width: 530px;
+    justify-content: space-between;
+    margin-top: 25px;
+    &__title{
+      font-family: Rubik, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      letter-spacing: 0.02em;
+      /* white */
+
+      color: #FFFFFF;
+
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      margin-top: 20px;
+      /* white */
+
+      color: #FFFFFF;
+
+      opacity: 0.7;
+    }
+  }
+  &__image{
+    width: 492px;
+  }
+}

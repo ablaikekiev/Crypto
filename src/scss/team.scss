@@ -1,0 +1,89 @@
+.team{
+  padding: 100px 160px;
+  text-align: center;
+  &-lineFlex{
+    display: flex;
+    justify-content: center;
+    &__line{
+      @include RedLine;
+      margin-top: 10px;
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      margin-left: 20px;
+      /* Dark1 */
+
+      color: #0B060C;
+    }
+  }
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+
+    /* Dark blue */
+
+    color: #090F3F;
+  }
+  &__subtitle{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+
+    /* Gray 2 */
+    margin-top: 20px;
+    color: #4F4F4F;
+  }
+  &-flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__items{
+      margin: 60px;
+    }
+    &__img{
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    &__title{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+
+      /* Dark blue */
+
+      color: #090F3F;
+
+    }
+    &__text{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+
+      /* Gray 2 */
+      margin-top: 10px;
+      color: #4F4F4F;
+
+    }
+    &__icon{
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}

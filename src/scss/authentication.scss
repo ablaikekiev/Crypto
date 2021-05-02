@@ -1,0 +1,120 @@
+
+.authentication {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/auth/background.png") center/cover no-repeat;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  &.active{
+    display: flex;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  .tabs {
+
+    &-navigation {
+      display: none;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+
+      &.active {
+        display: flex;
+      }
+
+      &__link {
+        cursor: pointer;
+        width: 150px;
+        height: 46px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+        border: 2px solid #FFFFFF;
+        border-radius: 28px;
+        margin-right: 20px;
+        font-family: Hind, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 46px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #fff;
+        background: transparent;
+
+        &.active {
+          background: #F8BA1A;
+          border: none;
+        }
+      }
+    }
+
+    &-content {
+      display: none;
+
+      &.active {
+        display: flex;
+      }
+
+      &__form {
+        margin: 0 auto;
+        text-align: center;
+
+        &-title {
+          font-family: Hind, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 36px;
+          line-height: 150%;
+          letter-spacing: 0.02em;
+          color: #FFFFFF;
+        }
+
+        &-label {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          &__input {
+            margin-bottom: 20px;
+            width: 436px;
+            height: 60px;
+            background: #FFFFFF;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            padding-left: 20px;
+          }
+
+          &__btn {
+            @include yellowBtn;
+            cursor: pointer;
+            margin-bottom: 20px;
+          }
+        }
+
+        &-text {
+          cursor: pointer;
+          font-family: Hind, sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 150%;
+          letter-spacing: 0.02em;
+          text-decoration-line: underline;
+          color: #FFFFFF;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

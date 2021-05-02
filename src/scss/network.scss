@@ -1,0 +1,87 @@
+.network{
+  background: url("../images/network/background.png") center/cover no-repeat;
+  padding: 180px 10px 100px 150px;
+  display: flex;
+  justify-content: space-between;
+  &__text{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &-lineFlex{
+    display: flex;
+
+  }
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    margin-top: 20px;
+    letter-spacing: 0.02em;
+
+    /* white */
+
+    color: #FFFFFF;
+
+  }
+  &__content{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 0.02em;
+
+    /* white */
+
+    color: #FFFFFF;
+
+    opacity: 0.7;
+  }
+  &-flexBox{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    &__text{
+      font-family: Rubik, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      letter-spacing: 0.02em;
+
+      /* white */
+
+      color: #FFFFFF;
+    }
+    &__redText{
+      color: #CF1257;
+    }
+    &__content{
+      font-family: Hind, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+
+      /* white */
+
+      color: #FFFFFF;
+
+      opacity: 0.7;
+    }
+  }
+  &-flexImages{
+    display: flex;
+    &__items{
+      margin: 25px;
+
+    }
+  }
+
+}

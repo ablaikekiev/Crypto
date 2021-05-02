@@ -1,0 +1,46 @@
+.home{
+  background: url("../images/home/background.png") center/cover no-repeat;
+  padding: 192px 0 292px;
+  &__title{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 120%;
+    /* or 90px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #FFFFFF;
+
+  }
+  &__line{
+    @include RedLine;
+  }
+  &__text{
+    font-family: Hind, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* white */
+    margin-top: 50px;
+    color: #FFFFFF;
+    width: 355px;
+  }
+  &__btn{
+    @include yellowBtn;
+    margin: 10px;
+  }
+}
